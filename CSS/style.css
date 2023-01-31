@@ -113,3 +113,66 @@ body {
 }
 
 /* ------ End banner section ------  */
+/* ------ Start Services section ------  */
+#services {
+
+    padding: 90px 0;
+}
+
+.service-img {
+    position: relative;
+    animation: upDown 1s alternate infinite ease-in-out;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.TitlE::before {
+    content: "";
+    background: rgb(15, 255, 248);
+    height: 5px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+.TitlE::after {
+    content: "";
+    background: rgb(74, 219, 214);
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(4px);
+    border-radius: 50%;
+}
+
+.services {
+    padding: 20px;
+}
+
+.services h4 {
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+#services .btn-primary {
+    transition: 0.7s ease-in-out;
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(56deg, rgba(15, 255, 248, 1) 0%, rgba(29, 178, 187, 1) 39%, rgba(29, 119, 124, 1) 77%, rgba(18, 68, 87, 1) 100%);
+}
+
+#services .btn-primary:hover {
+    background: rgb(31, 200, 203);
+    /* background: linear-gradient(156deg, rgba(15, 255, 248, 1) 0%, rgba(29, 178, 187, 1) 39%, rgba(29, 119, 124, 1) 77%, rgba(18, 68, 87, 1) 100%); */
+}
+
+/* ------ End Services section ------  */
+/* ------ Start About Us section ------  */
+
+/* ------ End About Us section ------  */
