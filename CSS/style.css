@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* ------ Start Navbar section ------  */
+#NavBar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    background: rgb(15, 255, 248);
+    background: linear-gradient(56deg, rgba(15, 255, 248, 1) 0%, rgba(29, 178, 187, 1) 39%, rgba(29, 119, 124, 1) 77%, rgba(18, 68, 87, 1) 100%);
+    padding: 0 !important;
+}
+
+.LOGO {
+    /* height: 40px; */
+    margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.LOGO span {
+    color: rgb(177, 37, 37);
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color: white;
+    font-weight: 600;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 27px;
+}
+
+.container-fluid button {
+    outline: none !important;
+    border: none;
+}
+
+/* ------ End Navbar section ------  */
+
+/* ------ Start banner section ------  */
+#banner {
+    background: rgb(15, 255, 248);
+    background: linear-gradient(56deg, rgba(15, 255, 248, 1) 0%, rgba(29, 178, 187, 1) 39%, rgba(29, 119, 124, 1) 77%, rgba(18, 68, 87, 1) 100%);
+    color: white;
+    padding-top: 5%;
+}
+
+#banner .Title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.PlayBTN {
+    animation: spin 4s alternate infinite ease-in-out;
+    width: 45px;
+    margin: 22px;
+
+}
+
+#banner a {
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-img {
+    width: 100%;
+}
+
+.img2 {
+    animation: upDown 1s alternate infinite ease-in-out;
+    position: relative;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    70% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes upDown {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+/* ------ End banner section ------  */
