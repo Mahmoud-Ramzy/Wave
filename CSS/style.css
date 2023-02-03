@@ -5,6 +5,8 @@
 
 body {
     font-family: sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* ------ Start Navbar section ------  */
@@ -26,10 +28,11 @@ body {
     font-size: 22px;
     font-weight: bold;
     padding-left: 20px;
+    color: white;
 }
 
 .LOGO span {
-    color: rgb(177, 37, 37);
+    color: #F15F6F;
 }
 
 .navbar-nav li {
@@ -138,7 +141,7 @@ body {
 
 .TitlE::after {
     content: "";
-    background: rgb(74, 219, 214);
+    background: #4adbd6;
     height: 20px;
     width: 20px;
     margin: 0 auto;
@@ -146,6 +149,38 @@ body {
     display: block;
     transform: translateY(4px);
     border-radius: 50%;
+}
+
+@media (max-width:1000px) {
+    .TitlE::after {
+        transform: translateY(5px);
+    }
+}
+
+@media (max-width:770px) {
+    .TitlE::after {
+        transform: translateY(12px);
+    }
+}
+
+@media (max-width:440px) {
+    .TitlE {
+        font-size: 23px;
+    }
+
+    .TitlE::after {
+        transform: translateY(22px);
+    }
+}
+
+@media (max-width:300px) {
+    .TitlE {
+        font-size: 18px;
+    }
+
+    .TitlE::after {
+        display: none;
+    }
 }
 
 .services {
@@ -174,5 +209,184 @@ body {
 
 /* ------ End Services section ------  */
 /* ------ Start About Us section ------  */
+#AboutUs {
+    background: #f4f8fa;
+    padding: 70px 0;
+}
+
+.titleAbout {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 8%;
+}
+
+#AboutUs ul {
+    padding-left: 20px;
+}
+
+#AboutUs ul li {
+    margin: 10px 0;
+}
+
+#AboutUs img {
+    animation: upDown 1s alternate infinite ease-in-out;
+    position: relative;
+}
 
 /* ------ End About Us section ------  */
+
+/* ------ Start Testimonials section ------  */
+#Testimonials {
+    background-color: #fff;
+    color: #000;
+    padding-top: 100px;
+}
+
+.testimonials {
+    border-left: 4px solid rgb(31, 200, 203);
+    padding: 20px;
+    border-radius: 30px;
+    margin: 50px 0;
+}
+
+.testimonials p:first-of-type {
+    color: #393f3f;
+}
+
+.testimonials img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.details {
+    display: inline-block;
+    font-size: 12px;
+    color: black;
+}
+
+svg {
+    width: 100%;
+}
+
+/* ------ End Testimonials Us section ------  */
+/* ------ End Testimonials Us section ------  */
+/* ------ Start social Media section ------  */
+#socialMedia {
+    background-color: #f4f8fa;
+    padding: 100px 0;
+}
+
+#socialMedia p {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+.social-icons img {
+    position: relative;
+    width: 70px;
+    transition: 0.8s;
+    border-radius: 50%;
+}
+
+.social-icons a:hover img {
+    transform: translateY(-20px);
+    filter: saturate(1.8) brightness(1.5);
+    background-color: #898c8e;
+    box-shadow: 0 7px 50px 1px rgba(0, 0, 0, 0.459);
+
+}
+
+/* ------ End social Media section ------  */
+/* ------ Start Footer section ------  */
+.wave2 {
+    width: 100%;
+}
+
+#footer .row {
+    width: 100%;
+}
+
+#footer {
+    background: #2fa5a1;
+    background: linear-gradient(56deg, rgba(15, 255, 248, 1) 0%, rgba(29, 178, 187, 1) 39%, rgba(29, 119, 124, 1) 77%, rgba(18, 68, 87, 1) 100%);
+    color: #fff;
+}
+
+#footer .LOGO {
+    margin: unset;
+    padding: unset;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+#footer .container {
+    padding: 100px 10px 10px 10px;
+}
+
+.footerBOX i {
+    background: linear-gradient(56deg, rgba(15, 255, 248, 1) 0%, rgba(29, 178, 187, 1) 39%, rgb(49, 146, 151) 77%, rgb(65, 112, 129) 100%);
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    box-shadow: 2px 3px 20px 1px rgb(37, 64, 65);
+    font-size: 20px;
+}
+
+.footerBOX a {
+    display: block;
+}
+
+.footerBOX {
+    padding: 20px 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    text-align: left;
+}
+
+#footer .sub {
+    padding: 30px;
+}
+
+#footer input {
+    display: block;
+}
+
+#footer button {
+    transition: 0.6s;
+    display: block;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: linear-gradient(56deg, rgba(15, 255, 248, 1) 0%, rgba(29, 178, 187, 1) 39%, rgb(49, 146, 151) 77%, rgb(65, 112, 129) 100%);
+}
+
+#footer button:hover {
+    transform: translateY(-7px);
+    box-shadow: 2px 3px 20px 1px rgb(37, 64, 65);
+
+}
+
+hr {
+    border: 1.5px solid white;
+}
+
+.copyRight {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+
+/* ------ End Footer section ------  */

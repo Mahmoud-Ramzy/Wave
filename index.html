@@ -21,6 +21,8 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+        <!-- Scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
     <link rel="stylesheet" href="./CSS/style.css" />
     <title>Agency Template</title>
@@ -49,19 +51,19 @@
             <!-- in bootstrap 5 "ml:margin left -> ms: margin start" -->
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#banner">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#AboutUs">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link" href="#Testimonials">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#socialMedia">Contact</a>
               </li>
             </ul>
           </div>
@@ -72,13 +74,16 @@
     <section id="banner">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 L">
             <p class="Title">BEST DIGITAL AGENCY</p>
             <p>
               Subscribe Programzy Youtube Channel to watch videos about
               programming and web development made by Mahmoud Ramzy.
             </p>
-            <a href="#" class="Watch"
+            <a
+              href="https://www.youtube.com/watch?v=OguSu1wh2NM&list=PLw5ngQdKMSB_gSJ-gQLYky0QM1ypmdGkY"
+              class="Watch"
+              target="_blank"
               ><img
                 src="./images/play.png"
                 alt="Play video button"
@@ -86,7 +91,7 @@
               />Watch Now
             </a>
           </div>
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 text-center R">
             <img
               src="./images/home2.png"
               class="img-fluid img2"
@@ -102,10 +107,10 @@
     <!-- Start Services Section -->
     <section id="services">
       <div class="container text-center">
-        <h1 class="TitlE">WHAT ARE WE DOING ?</h1>
+        <h1 class="TitlE L">WHAT ARE WE DOING ?</h1>
         <div class="row text-center">
           <!-- first Service -->
-          <div class="col-md-4 services">
+          <div class="col-md-4 services L">
             <img
               src="./images/service1.png"
               alt="Service"
@@ -119,7 +124,7 @@
           </div>
 
           <!-- Second Service -->
-          <div class="col-md-4 services">
+          <div class="col-md-4 services B">
             <img
               src="./images/service2.png"
               alt="Service"
@@ -132,7 +137,7 @@
             </p>
           </div>
           <!-- Third Service -->
-          <div class="col-md-4 services">
+          <div class="col-md-4 services R">
             <img
               src="./images/service3.png"
               alt="Service"
@@ -145,16 +150,132 @@
             </p>
           </div>
         </div>
-        <button type="button" class="btn btn-primary">All Services</button>
+        <button type="button" class="btn btn-primary B">All Services</button>
       </div>
     </section>
     <!-- End Services Section -->
     <!-- Start About Us Section -->
     <section id="AboutUs">
       <div class="container">
-        <h1 class="TitlE text-center">Why Choose US ?</h1>
+        <h1 class="TitlE text-center R">Why Choose US ?</h1>
+        <div class="row">
+          <div class="col-md-6 AboutUs L">
+            <p class="titleAbout">Why we're different</p>
+            <ul>
+              <li>Believe in doing business with honesty</li>
+              <li>Motivated people who work seriously</li>
+              <li>Believe in doing business with honesty</li>
+              <li>Believe in doing business with honesty</li>
+              <li>Believe in doing business with honesty</li>
+              <li>Believe in doing business with honesty</li>
+              <li>Believe in doing business with honesty</li>
+            </ul>
+          </div>
+          <div class="col-md-6 R">
+            <img src="./images/network.png" alt="network" class="img-fluid" />
+          </div>
+        </div>
       </div>
     </section>
     <!-- End About Us Section -->
+    <!-- Start Testimonials Section -->
+    <section id="Testimonials">
+      <div class="container">
+        <h1 class="TitlE text-center B">What Clients Say ?</h1>
+        <div class="row offset-1">
+          <div class="col-md-5 testimonials L">
+            <p>
+              <b>"</b>Subscribe Programzy Youtube Channel to watch videos about
+              programming and web development made by Mahmoud Ramzy.<b>"</b>
+            </p>
+            <img src="./images/user1.jpeg" alt="User 1" />
+            <p class="details">
+              <b>Mahmoud Ramzy</b> <br />
+              Computer science Engineer
+            </p>
+          </div>
+          <div class="col-md-5 testimonials R">
+            <p>
+              <b>"</b>Subscribe Programzy Youtube Channel to watch videos about
+              programming and web development made by Mahmoud Ramzy.<b>"</b>
+            </p>
+            <img src="./images/user2.jpeg" alt="User 2" />
+            <p class="details">
+              <b>Mahmoud Ramzy</b> <br />
+              Software Engineer
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+    <!-- Start Social media Section -->
+    <section id="socialMedia">
+      <div class="container text-center B">
+        <p>OUR SOCIAL MEDIA</p>
+        <div class="social-icons">
+          <a href="#"><img src="images/facebook-icon.png" alt="facebook" /></a>
+          <a href="#"
+            ><img src="images/instagram-icon.png" alt="instagram"
+          /></a>
+          <a href="#"><img src="images/linkedin-icon.png" alt="linked in" /></a>
+          <a href="#"
+            ><img src="images/twitter-icon.png" alt="twitter icon"
+          /></a>
+          <a href="#"
+            ><img src="images/whatsapp-icon.png" alt="Whatsapp icon"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- End Social media Section -->
+    <!-- Start Contact Section -->
+    <section id="footer">
+      <img src="images/wave2.png" alt="Wave 2" class="wave2" />
+      <div class="container">
+        <div class="row text-center L">
+          <div class="col-md-4 footerBOX">
+            <a class="navbar-brand" href="#"
+              ><p class="LOGO">Mahmoud <span>Ramzy</span></p></a
+            >
+            <p>
+              Subscribe Programzy Youtube Channel to watch videos about
+              programming and web development made by Mahmoud Ramzy.
+            </p>
+          </div>
+          <div class="col-md-4 footerBOX B">
+            <p><b>Contact Us</b></p>
+            <p><i class="fa-solid fa-location-dot"></i> alexandria, Egypt</p>
+            <p><i class="fa-solid fa-phone"></i> +20 01012345678</p>
+            <p><i class="fa-solid fa-envelope"></i> asdf@gmail.com</p>
+          </div>
+          <div class="col-md-4 footerBOX INP R">
+            <p><b>Subscribe NEWSLETTER</b></p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your E-Mail"
+            />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyRight"> &#169 Mahmoud Ramzy 2023</div>
+    </section>
+    <!-- End Contact Section -->
+    <script>
+      /*Start reveal*/
+ScrollReveal({
+    reset:false, //repeat move
+    distance:'1000px',
+    duration:800,
+    delay:100
+});
+ScrollReveal().reveal('.L, .main-heading, .about-me', {  origin: 'left' });
+ScrollReveal().reveal('.B, .portfolio-container, .social-links', {origin: 'bottom',duration:'900' });
+ScrollReveal().reveal('.R,  .i1', { origin: 'right' });
+    </script>
   </body>
 </html>
