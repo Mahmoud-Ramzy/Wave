@@ -7,7 +7,7 @@ body {
     font-family: sans-serif;
     scroll-behavior: smooth;
     width: 100vw;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /* ------ Start Navbar section ------  */
