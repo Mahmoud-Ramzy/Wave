@@ -150,7 +150,7 @@
             </p>
           </div>
         </div>
-        <button type="button" class="btn btn-primary B">All Services</button>
+        <button type="button" class="btn btn-primary R">All Services</button>
       </div>
     </section>
     <!-- End Services Section -->
@@ -171,7 +171,7 @@
               <li>Believe in doing business with honesty</li>
             </ul>
           </div>
-          <div class="col-md-6 R">
+          <div class="col-md-6 B">
             <img src="./images/network.png" alt="network" class="img-fluid" />
           </div>
         </div>
@@ -183,7 +183,7 @@
       <div class="container">
         <h1 class="TitlE text-center R">What Clients Say ?</h1>
         <div class="row ">
-          <div class="col-md-6 testimonials B">
+          <div class="col-md-6 testimonials L">
             <p>
               <b>"</b>Subscribe Programzy Youtube Channel to watch videos about
               programming and web development made by Mahmoud Ramzy.<b>"</b>
@@ -191,10 +191,10 @@
             <img src="./images/user1.jpeg" alt="User 1" />
             <p class="details">
               <b>Mahmoud Ramzy</b> <br />
-              Computer science Engineer
+              Computer and Systems Engineer
             </p>
           </div>
-          <div class="col-md-6 testimonials B">
+          <div class="col-md-6 testimonials R">
             <p>
               <b>"</b>Subscribe Programzy Youtube Channel to watch videos about
               programming and web development made by Mahmoud Ramzy.<b>"</b>
@@ -247,7 +247,7 @@
             <p><b>Contact Us</b></p>
             <p><i class="fa-solid fa-location-dot"></i> alexandria, Egypt</p>
             <p><i class="fa-solid fa-phone"></i> +20 01012345678</p>
-            <p><i class="fa-solid fa-envelope"></i> asdf@gmail.com</p>
+            <p><i class="fa-solid fa-envelope"></i> asdf@example.com</p>
           </div>
           <div class="col-md-4 footerBOX INP R">
             <p><b>Subscribe NEWSLETTER</b></p>
@@ -269,19 +269,21 @@
       /*Start reveal*/
 ScrollReveal({
     reset:false, //repeat move
-    distance:'20%',
+    distance:'30px',
     duration:900,
-    delay:100,
+    delay:120,
     easing:'ease-in-out'
 });
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
   ScrollReveal({
     reset:false, //repeat move
-    distance:'8%',
-    duration:600,
+    distance:'200px',
+    duration:900,
     delay:50,
     easing:'ease-in-out'
 });
+// ScrollReveal().reveal('.L, .R', {  origin: 'left' });
+// ScrollReveal().reveal('.B', {origin: 'bottom'});
 }
 
 ScrollReveal().reveal('.L', {  origin: 'left' });

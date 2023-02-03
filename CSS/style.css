@@ -63,6 +63,7 @@ body {
     background: linear-gradient(56deg, rgba(15, 255, 248, 1) 0%, rgba(29, 178, 187, 1) 39%, rgba(29, 119, 124, 1) 77%, rgba(18, 68, 87, 1) 100%);
     color: white;
     padding-top: 5%;
+    overflow: hidden !important;
 }
 
 #banner .Title {
@@ -119,7 +120,7 @@ body {
 /* ------ End banner section ------  */
 /* ------ Start Services section ------  */
 #services {
-
+    overflow: hidden !important;
     padding: 90px 0;
 }
 
@@ -211,6 +212,7 @@ body {
 /* ------ End Services section ------  */
 /* ------ Start About Us section ------  */
 #AboutUs {
+    overflow: hidden !important;
     background: #f4f8fa;
     padding: 70px 0;
 }
@@ -239,10 +241,12 @@ body {
 
 /* ------ Start Testimonials section ------  */
 #Testimonials .container {
+    overflow: hidden !important;
     padding: 30px;
 }
 
 #Testimonials {
+    overflow: hidden !important;
     background-color: #fff;
     color: #000;
     padding-top: 100px;
@@ -280,6 +284,7 @@ svg {
 /* ------ End Testimonials Us section ------  */
 /* ------ Start social Media section ------  */
 #socialMedia {
+    overflow: hidden !important;
     background-color: #f4f8fa;
     padding: 100px 0;
 }
@@ -317,6 +322,7 @@ svg {
 }
 
 #footer {
+    overflow: hidden !important;
     background: #2fa5a1;
     background: linear-gradient(56deg, rgba(15, 255, 248, 1) 0%, rgba(29, 178, 187, 1) 39%, rgba(29, 119, 124, 1) 77%, rgba(18, 68, 87, 1) 100%);
     color: #fff;
