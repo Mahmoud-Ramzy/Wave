@@ -368,6 +368,9 @@ svg {
 
 #footer input {
     display: block;
+    border-radius: 15px;
+    padding: 3px 7px;
+    border: none;
 }
 
 #footer button {
@@ -382,6 +385,7 @@ svg {
     border-radius: 10px;
     font-weight: 600;
     background: linear-gradient(56deg, rgba(15, 255, 248, 1) 0%, rgba(29, 178, 187, 1) 39%, rgb(49, 146, 151) 77%, rgb(65, 112, 129) 100%);
+
 }
 
 #footer button:hover {
