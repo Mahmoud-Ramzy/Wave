@@ -232,11 +232,16 @@ body {
 #AboutUs img {
     animation: upDown 1s alternate infinite ease-in-out;
     position: relative;
+    width: 90%;
 }
 
 /* ------ End About Us section ------  */
 
 /* ------ Start Testimonials section ------  */
+#Testimonials .container {
+    padding: 30px;
+}
+
 #Testimonials {
     background-color: #fff;
     color: #000;
